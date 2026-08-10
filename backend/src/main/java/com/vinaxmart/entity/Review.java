@@ -1,0 +1,3 @@
+package com.vinaxmart.entity;
+import jakarta.persistence.*; import lombok.*; import java.time.*;
+@Entity @Getter @Setter @NoArgsConstructor @AllArgsConstructor @Builder public class Review { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) private Long id; @ManyToOne(optional=false) private Product product; @ManyToOne(optional=false) private User user; private int rating; @Column(length=1000) private String comment; private LocalDateTime createdAt; }

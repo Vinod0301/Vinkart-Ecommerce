@@ -1,0 +1,1 @@
+package com.vinaxmart.repository; import com.vinaxmart.entity.Category; import org.springframework.data.jpa.repository.JpaRepository; public interface CategoryRepository extends JpaRepository<Category,Long>{}

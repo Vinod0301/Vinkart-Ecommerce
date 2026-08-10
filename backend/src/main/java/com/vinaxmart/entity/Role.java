@@ -1,0 +1,1 @@
+package com.vinaxmart.entity; public enum Role { USER, ADMIN }
